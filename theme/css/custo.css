@@ -1,0 +1,51 @@
+b {
+	color:#800000;
+}
+article {
+	color:#515151;
+}
+
+.stroke {
+text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.rightaligned {
+	text-align:right;
+}
+
+.noBullets {
+list-style: none;
+}
+
+.partTitle aside{
+	filter:alpha(opacity=50);
+	-moz-opacity:0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+	z-index:1;
+}
+.partTitle h2 {
+text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+position: relative;
+color:white;
+top: 85px;
+left:-20px;
+z-index:54;
+}
+
+slides > slide.nutshell:before {
+  background: url(../../images/Intent/Image-Intent_logo_cropped.png) no-repeat 0 50%;
+    -webkit-background-size: 30px 30px;
+  -moz-background-size: 30px 30px;
+  -o-background-size: 30px 30px;
+  background-size: 30px 30px;
+  content: "Intent in a nutshell";
+}
+
+slides > slide.part1:before {
+  background: url(../../images/Intent/Image-Intent_logo_cropped.png) no-repeat 0 50%;
+    -webkit-background-size: 30px 30px;
+  -moz-background-size: 30px 30px;
+  -o-background-size: 30px 30px;
+  background-size: 30px 30px;
+  content: "Intent in a nutshell";
+}
