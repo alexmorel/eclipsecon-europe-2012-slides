@@ -32,6 +32,13 @@ left:-20px;
 z-index:54;
 }
 
+.paddinger {
+ margin-left:100px;
+ padding-left:20px;
+ padding-bottom:20px;
+ background-color:yellow;
+}
+
 slides > slide.nutshell:before {
   background: url(../../images/Intent/Image-Intent_logo_cropped.png) no-repeat 0 50%;
     -webkit-background-size: 30px 30px;
@@ -47,5 +54,5 @@ slides > slide.part1:before {
   -moz-background-size: 30px 30px;
   -o-background-size: 30px 30px;
   background-size: 30px 30px;
-  content: "Intent in a nutshell";
+  content: "Documentation Sucks";
 }
