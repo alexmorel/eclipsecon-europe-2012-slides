@@ -36,7 +36,53 @@ z-index:54;
  margin-left:100px;
  padding-left:20px;
  padding-bottom:20px;
- background-color:yellow;
+ background-color:#F8F8F8 ;
+ -moz-border-radius: 15px;
+ border-radius: 15px; 
+ border: 1px solid grey;
+ padding-right:20px;
+}
+  
+.intent_content {
+	margin-top:15px;
+	margin-left : 100px;
+	margin-right : 120px;
+	padding-left : 50px;
+	padding-top:15px;
+	padding-bottom:50px;
+	background-color:#F8F8F8 ;
+	font-size: 18px;
+	border: 1px solid grey;
+	color:black;
+}
+
+.intent_content b {
+	color:black;
+}
+
+
+.intent_content i {
+	font-style:italic;
+}
+
+.intent_content .kw {
+	color:#800000;
+}
+
+.intent_subsectioncontainer {
+	padding-left : 50px;
+}
+
+.intent_modelingunit {
+	padding-left : 20px;
+	margin-right:150px;
+	padding-bottom:10px;
+	margin-top:5px;
+	padding-top:5px;
+	background-color:#D8D8D8;
+	border: 1px solid grey;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
 }
 
 slides > slide.nutshell:before {
@@ -55,4 +101,4 @@ slides > slide.part1:before {
   -o-background-size: 30px 30px;
   background-size: 30px 30px;
   content: "Documentation Sucks";
-}
+

@@ -27,24 +27,19 @@ URL: https://code.google.com/p/io-2012-slides
 
 <slides class="layout-widescreen">
 
-  <slide class="title-slide segue nobackground" style="background: url(images/Intent/stonehedge2.png); background-size: 100%;">
-    <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
-    <hgroup>
-      <h1 class="stroke white">It's 2012 and your documentation sucks</h1>
-	  <h2 style="filter:alpha(opacity=0);-moz-opacity:0;-khtml-opacity:0;opacity:0;">hidden<h2>
-    </hgroup>	
-
-  </slide>
-
-  <slide class="title-slide segue nobackground" style="background: url(images/Intent/stonehedge2.png); background-size: 100%;">
+  <slide class="title-slide segue nobackground" style="background: url(images/Intent/doc/rtfm.jpg); background-size: 100%;">
 	<aside class="gdbar" style="width: 350px;">	
 		<img style=" width: 261px;height: 85px;position: absolute;right: 0;margin: 8px 15px;" 
 	src="images/Intent/Image-Intent_logo.png">
 	</aside>
     <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
-    <hgroup>
+    <hgroup class= "build" style="position:relative;left:-50px;top:220px;padding: 0px 0px 0px 0px;margin:0px 0px 0px 0px;">
+		<div>
       <h1 data-config-title class="stroke white"><!-- populated from slide_config.json --></h1>
-      <h2 data-config-subtitle style="color:black" class="auto-fadein"><!-- populated from slide_config.json --></h2>
+      <h2 data-config-subtitle class="stroke white"><!-- populated from slide_config.json --></h2>
+	  <br/><br/><br/><br/><br/><br/>
+	  <p data-config-presenter class="stroke"><!-- populated from slide_config.json --></p>
+	  </div>
     </hgroup>	
 
   </slide>
@@ -75,8 +70,8 @@ URL: https://code.google.com/p/io-2012-slides
   </slide>
   
   <slide class="segue nobackground partTitle" style="background: url(images/Intent/doc/wasted_paper.jpg); background-size: 100%;">
-	  <h2>1. Documentation Sucks </h2>
-	  <aside style="width:460px" class="gdbar" ></aside>
+	  <h2 style="top:-20px">1. Documentation Sucks </h2>
+	  <aside style="top:20px; width:650px" class="gdbar" ></aside>
   </slide>
 
   <slide class="part1">
@@ -105,7 +100,7 @@ URL: https://code.google.com/p/io-2012-slides
 		<div class="paddinger">
 			 <hgroup>
 				  <h3>
-					Why does nobody write doc? <br/><br/>
+					Why does nobody write doc? <br/><hr/>
 				  </h3>
 			   </hgroup>
 			  <ul class="build">
@@ -129,8 +124,7 @@ URL: https://code.google.com/p/io-2012-slides
 		  1. Because most of the time it does not contain what you are looking for.
 		 </p>
 		 <p>
-			2. Because most of the time it's <b>outdated</b><br/>
-					-> no one trusts it anymore				 
+			2. Because most of the time it's <b>outdated</b> -> no one trusts it anymore				 
 		</p>
     </article>	
   </slide>
@@ -146,13 +140,12 @@ URL: https://code.google.com/p/io-2012-slides
 		  1. Because most of the time it does not contain what you are looking for.
 		 </p>
 		 <p>
-			2. Because most of the time it's <b>outdated</b><br/>
-					-> no one trusts it anymore				 
+			2. Because most of the time it's <b>outdated</b> -> no one trusts it anymore				 
 		</p>
 		<div class="paddinger">
 			<hgroup>
 				 <h3>
-					Why is Documentation <b>outdated</b>?
+					Why is Documentation <b>outdated</b>?<br/><hr/>
 				</h3>
 			</hgroup>
 			<img class="build" src="images/Intent/doc/doc_monster.png"  style="float:left; padding-right:30px;"/>
@@ -167,9 +160,9 @@ URL: https://code.google.com/p/io-2012-slides
   </slide>
   
 
-  <slide class="segue nobackground partTitle" style="background: url(images/Intent/doc/wasted_paper.jpg); background-size: 100%;">
-	  <h2>2. Meet Intent</h2>
-	  <aside style="width:460px" class="gdbar" ></aside>
+  <slide class="segue nobackground partTitle" style="background: url(images/Intent/part2.jpg); background-size: 100%;">
+	  <h2>2. Synchronize your Doc with Intent</h2>
+	  <aside style="width:875px" class="gdbar" ></aside>
   </slide>
   
     
@@ -203,11 +196,53 @@ URL: https://code.google.com/p/io-2012-slides
 		One <b>Intent Document</b> mixing both
 	  </h2>
     </hgroup>
-	    <article class="auto-fadein noBullets">
-      <ul >
-		<li>SmartEA example</li>
-       </ul>
-    </article>
+		<div class="intent_content">
+			<b class="kw">Chapter</b> <b>XXX</b> {
+				<div class="intent_subsectioncontainer">
+					This chapter <b>*aims*</b> to ...<br/>
+
+					<br/><b class="kw">Section</b> <b>Overview</b> {
+						<div class="intent_subsectioncontainer">
+								This <i>_section_</i> aims to...
+								<div class="intent_modelingunit">
+								<b class="kw">@M</b><br/>
+								<div class="intent_subsectioncontainer">
+								<b class="kw">new</b> BusinessArchitecture myBusinessArchitecture {<br/>
+										<div class="intent_subsectioncontainer">
+										name = <i style="color:blue">"My Business Architecture"</i>;<br/>
+										</div>
+									}<br/>
+									</div>
+								<b class="kw">M@</b>
+								</div>
+							}							
+						</div>
+					<br/><b class="kw">Section</b> XXX {
+						<div class="intent_subsectioncontainer">
+						In this section... <br/>
+							<div class="intent_modelingunit">
+								<b class="kw">@M</b>
+									<div class="intent_subsectioncontainer">
+									myBusinessArchitecture {<br/>
+										<div class="intent_subsectioncontainer">
+										products += <b class="kw">new</b> Product myProduct {<br/>
+											<div class="intent_subsectioncontainer">
+											ID = <i style="color:blue">"myProduct1"</i>;<br/>											
+											category = openSourceProductCategory;<br/>
+											</div>
+										};<br/>										
+										</div>
+									}<br/>
+									</div>
+								<b class="kw">M@</b>								
+								</div>
+						</div>
+					}<br/>
+				</div>
+				}
+				
+							</div>
+	</div>
   </slide>
   
     <slide class="part2">
@@ -232,9 +267,9 @@ URL: https://code.google.com/p/io-2012-slides
     </hgroup>
   </slide>
   
-  <slide class="segue nobackground partTitle" style="background: url(images/Intent/doc/wasted_paper.jpg); background-size: 100%;">
-	  <h2>3. Intent in Action</h2>
-	  <aside style="width:460px" class="gdbar" ></aside>
+  <slide class="segue nobackground partTitle" style="background: url(images/Intent/inAction.jpg); background-size: 100%;">
+	  <h2 style="left:550px;top:0px;">3. Intent in Action</h2>
+	  <aside style="width:460px;top:35px;" class="gdbar right" ></aside>
   </slide>
   
   <slide class="part3">
@@ -243,7 +278,7 @@ URL: https://code.google.com/p/io-2012-slides
 		SmartEA
 	  </h2>
 	   <ul >
-		<li>Tres breve présentation de smartEA</li>
+		<li>EA : many many documents, information is hard to maintain</li>
        </ul>
     </hgroup>
   </slide>
@@ -253,17 +288,17 @@ URL: https://code.google.com/p/io-2012-slides
       <h2>
 		SmartEA
 	  </h2>
-	   <ul >
-		<li>Demo</li>
-       </ul>
+	  <article>
+      <iframe data-src="./demos/Untitled/Untitled.html"></iframe>
+    </article>
     </hgroup>
   </slide>
   
-  <slide class="segue nobackground partTitle" style="background: url(images/Intent/doc/wasted_paper.jpg); background-size: 100%;">
-	  <h2>4. Documentation sharing sucks</h2>
-	  <aside style="width:460px" class="gdbar" ></aside>
+  <slide class="segue nobackground partTitle" style="background: url(images/Intent/share1.jpg); background-size: 100%;">
+	  <h2 style="top:550px;left:100px;";>4. Documentation sharing sucks</h2>
+	  <aside style="width:920px;top:585px;" class="gdbar" ></aside>
   </slide>
-  
+
    <slide class="part4">
     <hgroup>
       <h2>
@@ -284,6 +319,12 @@ URL: https://code.google.com/p/io-2012-slides
 		<li>Very quick CDO démo</li>
        </ul>
     </hgroup>
+  </slide>
+  
+    <slide class="segue nobackground partTitle" style="background: url(images/Intent/ariadne_bg.png); background-size: 100%;">
+	  <h2>5. To code synchronization and beyond</h2>
+	  <aside style="width:960px" class="gdbar" ></aside>
+	  <img  style="margin-top:100px;position:relative;top:20px;left:-70px;width:110%" src="images/Intent/ariadne_white.png"/>
   </slide>
   
   <slide class="backdrop"></slide>
