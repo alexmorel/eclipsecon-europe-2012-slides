@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.8"?>
+
+<target name="juno-sdk" sequenceNumber="33">
+<locations>
+<location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="planner" includeSource="true" type="InstallableUnit">
+<unit id="org.eclipse.mylyn.wikitext_feature.feature.group" version="1.7.0.v20120612-0600"/>
+<unit id="org.eclipse.acceleo.sdk.feature.group" version="3.3.0.v20120529-1042"/>
+<unit id="org.eclipse.emf.cdo.sdk.feature.group" version="4.1.0.v20120612-1844"/>
+<unit id="org.eclipse.emf.sdk.feature.group" version="2.8.0.v20120608-0554"/>
+<unit id="org.eclipse.emf.transaction.sdk.feature.group" version="1.6.0.v20120328-0001-777Z-9A_WsZmcPluNecyPkvrPKlH"/>
+<unit id="org.eclipse.emf.validation.sdk.feature.group" version="1.6.0.v20120328-0001-67T-96SGR75UNqZNTdeQnghI6uFA"/>
+<repository location="http://download.eclipse.org/releases/juno"/>
+</location>
+<location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="planner" includeSource="true" type="InstallableUnit">
+<unit id="com.google.collect" version="1.0.0.v201003051000"/>
+<unit id="org.junit" version="4.8.1.v4_8_1_v20100427-1100"/>
+<repository location="http://download.eclipse.org/tools/orbit/downloads/drops/updateSite"/>
+</location>
+<location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="planner" includeSource="true" type="InstallableUnit">
+<unit id="org.eclipse.platform.sdk" version="4.2.0.I20120608-1400"/>
+<repository location="http://download.eclipse.org/eclipse/updates/4.2"/>
+</location>
+<location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="planner" includeSource="true" type="InstallableUnit">
+<unit id="org.eclipse.emf.compare.feature.group" version="2.1.0.201210200615"/>
+<unit id="org.eclipse.emf.compare.ide.ui.feature.group" version="2.1.0.201210200615"/>
+<unit id="org.eclipse.emf.compare.rcp.ui.feature.group" version="2.1.0.201210200615"/>
+<repository location="jar:file:/C:/Users/alagarde/Downloads/org.eclipse.emf.compare.update.zip!/"/>
+</location>
+</locations>
+</target>

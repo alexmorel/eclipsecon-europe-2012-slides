@@ -42,6 +42,9 @@ z-index:54;
  border: 1px solid grey;
  padding-right:20px;
 }
+.paddinger p {
+font-size:24px;
+}
   
 .intent_content {
 	margin-top:15px;
@@ -49,11 +52,36 @@ z-index:54;
 	margin-right : 120px;
 	padding-left : 50px;
 	padding-top:15px;
-	padding-bottom:50px;
+	padding-bottom:10px;
 	background-color:#F8F8F8 ;
 	font-size: 18px;
 	border: 1px solid grey;
 	color:black;
+}
+
+.focused {
+	font-style:bold;
+	font-size:24px;
+	color:white;
+	padding-right:15px;
+	padding-left:15px;
+	background-color:grey;
+	 -moz-border-radius: 5px;
+	border-radius: 5px; 
+	border:1px solid black;
+}
+
+.greyed {
+	color:grey;
+	font-size:14px;
+}
+
+.greyed b {
+	color:grey;
+}
+
+.greyed .kw {
+	color:grey;
 }
 
 .intent_content b {
@@ -75,7 +103,7 @@ z-index:54;
 
 .intent_modelingunit {
 	padding-left : 20px;
-	margin-right:150px;
+	margin-right:100px;
 	padding-bottom:10px;
 	margin-top:5px;
 	padding-top:5px;
@@ -83,6 +111,11 @@ z-index:54;
 	border: 1px solid grey;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
+	font-size: 18px;
+	color:black;
+}
+.du {
+font-size: 16px;
 }
 
 slides > slide.nutshell:before {
@@ -100,5 +133,61 @@ slides > slide.part1:before {
   -moz-background-size: 30px 30px;
   -o-background-size: 30px 30px;
   background-size: 30px 30px;
-  content: "Documentation Sucks";
+  content: "1. Documentation Sucks";
+}
 
+slides > slide.part2:before {
+  background: url(../../images/Intent/Image-Intent_logo_cropped.png) no-repeat 0 50%;
+    -webkit-background-size: 30px 30px;
+  -moz-background-size: 30px 30px;
+  -o-background-size: 30px 30px;
+  background-size: 30px 30px;
+  content: "2. Synchronize your doc with Intent";
+}
+
+slides > slide.part3:before {
+  background: url(../../images/Intent/smartEA.png) no-repeat 0 50%;
+    -webkit-background-size: 30px 30px;
+  -moz-background-size: 30px 30px;
+  -o-background-size: 30px 30px;
+  background-size: 30px 30px;
+  content: "3. Intent applied to Enterprise Architecture";
+}
+slides > slide.part4:before {
+  background: url(../../images/Intent/cdo.jpg) no-repeat 0 50%;
+    -webkit-background-size: 30px 30px;
+  -moz-background-size: 30px 30px;
+  -o-background-size: 30px 30px;
+  background-size: 30px 30px;
+  content: "4. Documentation sharing sucks";
+}
+slides > slide.part5:before {
+  background: url(../../images/Intent/ariadne.png) no-repeat 0 50%;
+    -webkit-background-size: 30px 30px;
+  -moz-background-size: 30px 30px;
+  -o-background-size: 30px 30px;
+  background-size: 30px 30px;
+  content: "5. To code synchronization and beyond";
+}
+slides > slide.partNONE:before {
+ background-size: 0px 0px;
+ content: "";
+}
+
+slides > slide.three_things:before {
+  background: url(../../images/Intent/Image-Intent_logo_cropped.png) no-repeat 0 50%;
+    -webkit-background-size: 30px 30px;
+  -moz-background-size: 30px 30px;
+  -o-background-size: 30px 30px;
+  background-size: 30px 30px;
+  content: "The 3 things to remember";
+}
+
+slides > slide.thanks:before {
+  background: url(../../images/Intent/Image-Intent_logo_cropped.png) no-repeat 0 50%;
+    -webkit-background-size: 30px 30px;
+  -moz-background-size: 30px 30px;
+  -o-background-size: 30px 30px;
+  background-size: 30px 30px;
+  content: "Thank You!";
+}

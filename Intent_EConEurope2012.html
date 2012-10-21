@@ -33,12 +33,14 @@ URL: https://code.google.com/p/io-2012-slides
 	src="images/Intent/Image-Intent_logo.png">
 	</aside>
     <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
-    <hgroup class= "build" style="position:relative;left:-50px;top:220px;padding: 0px 0px 0px 0px;margin:0px 0px 0px 0px;">
+    <hgroup style="position:relative;left:-100px;top:250px;padding: 0px 0px 0px 0px;margin:0px 0px 0px 0px;">
 		<div>
       <h1 data-config-title class="stroke white"><!-- populated from slide_config.json --></h1>
       <h2 data-config-subtitle class="stroke white"><!-- populated from slide_config.json --></h2>
-	  <br/><br/><br/><br/><br/><br/>
-	  <p data-config-presenter class="stroke"><!-- populated from slide_config.json --></p>
+	  <br/><br/><br/><br/><br/>
+	  <p style="font-size:27px" data-config-presenter class="stroke white"><!-- populated from slide_config.json --></p>
+	 	<p style="font-size:27px;width:300px;margin-top:-35px; margin-left:830px"><span class="stroke white">EclipseCon Europe</span>
+		<span class="stroke white" >2012</span></p>
 	  </div>
     </hgroup>	
 
@@ -103,12 +105,15 @@ URL: https://code.google.com/p/io-2012-slides
 					Why does nobody write doc? <br/><hr/>
 				  </h3>
 			   </hgroup>
-			  <ul class="build">
-						<li>"Working software <b>over comprehensive documentation</b>"<br/>
-							<span style="padding-left:415px">Agile Manifesto</span>
-						</li>
-						<li>Don't be short-sighted: Enable your next effort</li>
-			  </ul>
+			  <img src="images/Intent/short_sight.jpg"  style="float:left;padding-right:10px;width:35%"/>
+				<p>"Working software <b>over comprehensive documentation</b>"<br/>
+					<span style="padding-left:375px">Agile Manifesto</span>
+				</p>
+				<p>
+					<br/>
+			Don't be short-sighted: Enable your <b>next effort</b>
+				<br/>	<br/>	<br/>
+				</p>
 		 </div>
 		</article>
 	</slide>
@@ -148,12 +153,13 @@ URL: https://code.google.com/p/io-2012-slides
 					Why is Documentation <b>outdated</b>?<br/><hr/>
 				</h3>
 			</hgroup>
-			<img class="build" src="images/Intent/doc/doc_monster.png"  style="float:left; padding-right:30px;"/>
-			<ul >
-				<li>Because <b>doc update</b> is a burden <br/>
-					missing the links between documentation & code</li>
-			 <li>That's exactly what Intent is about</li>
-			</ul>
+			<img class="build" src="images/Intent/doc/doc_monster.png"  style="float:left;padding-right:10px;width:35%"/>
+			<p>
+				Because <b>keeping your doc synchronized</b> is a burden <br/>
+				<br/>
+				<br/>
+				That's exactly what Intent is about
+			</p>
 			<div style="clear:both"/>
 		</div>
     </article>	
@@ -166,71 +172,75 @@ URL: https://code.google.com/p/io-2012-slides
   </slide>
   
     
-  <slide class="part2">
-    <hgroup>
-      <h2>
-		What do we want
-	  </h2>
-    </hgroup>
-    <article class="auto-fadein noBullets">
-      <ul >
-		<li> A mechanism to link documentation with code</li>
-		<li> That makes your documentation Agile (Respond to changes)</li>
-		<li>Schema Doc SmartEA liée aux artifacts de dev (+ Ad hoc corrections : changements)</li>
-       </ul>
-    </article>
+  <slide class="partNONE" style="background: url(images/Intent/linked_doc.png); background-size: 90%;background-position:30px 0px;background-color:white; background-repeat : no-repeat;">
+	<div class="auto-fadein paddinger" style="position:relative;top:100px;text-align:center;width:62%">
+		<h2>What do we want ?</h2>
+		<hr/>
+		A mechanism to <b>link</b> documentation parts with technical<br/> artifacts (Java code, models, plug-in dependencies...)
+		</div>
   </slide>
   
-  
-   <slide class="part2">
-    <hgroup>
-      <h2>
-		Instead of...
-	  </h2>
-    </hgroup>
+  <slide class="partNONE" style="background: url(images/Intent/linked_doc_step2a.png); background-size: 90%;background-position:30px 0px;background-color:white; background-repeat : no-repeat;">
   </slide>
   
-  <slide class="part2">
+  <slide class="partNONE" style="background: url(images/Intent/linked_doc_step5b.png); background-size: 90%;background-position:30px 0px;background-color:white; background-repeat : no-repeat;">
+  </slide>
+  
+   <slide class="partNONE" style="background: url(images/Intent/smartEA/instead_of.png); background-size: 90%;background-position:30px 30px;background-color:white; background-repeat : no-repeat;">
+  </slide>
+  
+  <slide class="partNONE">
     <hgroup>
       <h2>
 		One <b>Intent Document</b> mixing both
 	  </h2>
     </hgroup>
 		<div class="intent_content">
-			<b class="kw">Chapter</b> <b>XXX</b> {
+			<b class="kw">Chapter</b> <b>Logical Target Business Architecture </b> {
 				<div class="intent_subsectioncontainer">
-					This chapter <b>*aims*</b> to ...<br/>
-
-					<br/><b class="kw">Section</b> <b>Overview</b> {
+				<div class="du">
+					This chapter aims to describe the system users/actors in scope for <br/>
+					the <b>*Target Architecture*</b>. System actors/users are those users who <br/>
+					<b>*interact with a system*</b>. They can be human or a system/computer.<br/>
+				</div>
+					<br/><b class="kw">Section</b> <b>Computer Actors</b> {
 						<div class="intent_subsectioncontainer">
-								This <i>_section_</i> aims to...
+								<div class="du">
+									One of the most relevant <i style="font-style:italic">_Computer Actor_</i> is the <b>*Consistency Checker*</b>.<br/>
+									Whenever changes occur on the Travel Agency database, it verify all consistency constraints defined on the system.
+								</div>
 								<div class="intent_modelingunit">
 								<b class="kw">@M</b><br/>
 								<div class="intent_subsectioncontainer">
-								<b class="kw">new</b> BusinessArchitecture myBusinessArchitecture {<br/>
+								<b class="kw">new</b> Actor consistencyCheckerActor {<br/>
 										<div class="intent_subsectioncontainer">
-										name = <i style="color:blue">"My Business Architecture"</i>;<br/>
+										name = <i style="color:blue">"Consistency Checker"</i>;<br/>
+										type = ActorType.Computer;<br/>
 										</div>
 									}<br/>
 									</div>
 								<b class="kw">M@</b>
-								</div>
-							}							
-						</div>
-					<br/><b class="kw">Section</b> XXX {
+								</div></div>
+							}						
+						
+						<hr/>
+					<div style="text-align:center;padding-right:30px;margin-top:0px;font-size: 16px;">
+					<b>[...]</b>
+					</div>
+					<hr/>
+					<b class="kw">Section</b> <b>Process Steps mapped to Actors</b> {
 						<div class="intent_subsectioncontainer">
-						In this section... <br/>
+							<div class="du">
+								The <b>*Consistency Checker*</b> Actor participates to the <i style="font-style:italic">_Consistency Checking_</i> Process,<br/>
+								which helps achieving the <i style="font-style:italic">_Manage the data integrity_</i> Business Objective.<br/>
+							</div>
 							<div class="intent_modelingunit">
 								<b class="kw">@M</b>
 									<div class="intent_subsectioncontainer">
-									myBusinessArchitecture {<br/>
+									consistencyCheckerActor {<br/>
 										<div class="intent_subsectioncontainer">
-										products += <b class="kw">new</b> Product myProduct {<br/>
-											<div class="intent_subsectioncontainer">
-											ID = <i style="color:blue">"myProduct1"</i>;<br/>											
-											category = openSourceProductCategory;<br/>
-											</div>
-										};<br/>										
+										participatesInProcesses += <i style="font-style:italic">consistencyCheckingProcess</i>;<br/>
+										followObjectives += <i style="font-style:italic">dataIntegrityObjective</i>;								
 										</div>
 									}<br/>
 									</div>
@@ -245,27 +255,282 @@ URL: https://code.google.com/p/io-2012-slides
 	</div>
   </slide>
   
-    <slide class="part2">
+   <slide class="partNONE">
     <hgroup>
       <h2>
 		One <b>Intent Document</b> mixing both
 	  </h2>
-	   <ul >
-		<li>Contribution</li>
-       </ul>
     </hgroup>
+		<div class="intent_content">
+			<b class="kw">Chapter</b> <b>Logical Target Business Architecture </b> {
+				<div class="intent_subsectioncontainer">
+				<div class="du">
+					This chapter aims to describe the system users/actors in scope for <br/>
+					the <b>*Target Architecture*</b>. System actors/users are those users who <br/>
+					<b>*interact with a system*</b>. They can be human or a system/computer.<br/>
+				</div>
+					<br/><b class="kw">Section</b> <b>Computer Actors</b> {
+						<div class="intent_subsectioncontainer">
+								<div class="du">
+									One of the most relevant <i style="font-style:italic">_Computer Actor_</i> is the <b>*Consistency Checker*</b>.<br/>
+									Whenever changes occur on the Travel Agency database, it verify all consistency constraints defined on the system.
+								</div>
+								<div class="greyed">
+								<div class="intent_modelingunit" style="background-color:#F8F8F8;color:grey;font-size: 14px;">
+								@M<br/>
+								<div class="intent_subsectioncontainer">
+								new Actor consistencyCheckerActor {<br/>
+										<div class="intent_subsectioncontainer">
+										name = <i >"Consistency Checker"</i>;<br/>
+										type = ActorType.Computer;<br/>
+										</div>
+									}<br/>
+									</div>
+								M@
+								</div>
+								</div>
+													
+						</div>}	
+						<hr/>
+					<div style="text-align:center;padding-right:30px;margin-top:0px;font-size: 16px;">
+					<b>[...]</b>
+					</div>
+					<hr/>
+					<b class="kw">Section</b> <b>Process Steps mapped to Actors</b> {
+						<div class="intent_subsectioncontainer">
+							<div class="du">
+								The <b>*Consistency Checker*</b> Actor participates to the <i style="font-style:italic">_Consistency Checking_</i> Process,<br/>
+								which helps achieving the <i style="font-style:italic">_Manage the data integrity_</i> Business Objective.<br/>
+							</div>
+							<div class="greyed">
+							<div class="intent_modelingunit"  style="background-color:#F8F8F8;color:grey;font-size: 14px;">
+								@M
+									<div class="intent_subsectioncontainer">
+									consistencyCheckerActor {<br/>
+										<div class="intent_subsectioncontainer">
+										participatesInProcesses += <i style="font-style:italic">consistencyCheckingProcess</i>;<br/>
+										followObjectives += <i style="font-style:italic">dataIntegrityObjective</i>;								
+										</div>
+									}<br/>
+									</div>
+								M@						
+								</div>
+							</div>
+						</div>
+					}<br/>
+				</div>
+				}
+				
+							</div>
+	</div>
   </slide>
   
-   <slide class="part2">
+    
+  <slide class="partNONE">
     <hgroup>
       <h2>
-		Split Doc accros concerns
+		One <b>Intent Document</b> mixing both
 	  </h2>
-	   <ul >
-		<li>One slide example</li>
-       </ul>
     </hgroup>
+		<div class="intent_content greyed">
+			Chapter Logical Target Business Architecture {
+				<div class="intent_subsectioncontainer">
+				<div class="du">
+					This chapter aims to describe the system users/actors in scope for <br/>
+					the *Target Architecture*. System actors/users are those users who <br/>
+					*interact with a system*. They can be human or a system/computer.<br/>
+				</div>
+					<br/>SectionComputer Actors{
+						<div class="intent_subsectioncontainer">
+								<div class="du">
+									One of the most relevant <i style="font-style:italic">_Computer Actor_</i> is the *Consistency Checker*.<br/>
+									Whenever changes occur on the Travel Agency database, it verify all consistency constraints defined on the system.
+								</div>
+								<div class="intent_modelingunit">
+								<b class="kw">@M</b><br/>
+								<div class="intent_subsectioncontainer">
+								<b class="kw">new</b> Actor consistencyCheckerActor {<br/>
+										<div class="intent_subsectioncontainer">
+										name = <i style="color:blue">"Consistency Checker"</i>;<br/>
+										type = ActorType.Computer;<br/>
+										</div>
+									}<br/>
+									</div>
+								<b class="kw">M@</b>
+								</div></div>
+							}						
+						
+						<hr/>
+					<div style="text-align:center;padding-right:30px;margin-top:0px;font-size: 16px;">
+					<b>[...]</b>
+					</div>
+					<hr/>
+					Section Process Steps mapped to Actors {
+						<div class="intent_subsectioncontainer">
+							<div class="du">
+								The *Consistency Checker* Actor participates to the <i style="font-style:italic">_Consistency Checking_</i> Process,<br/>
+								which helps achieving the <i style="font-style:italic">_Manage the data integrity_</i> Business Objective.<br/>
+							</div>
+							<div class="intent_modelingunit">
+								<b class="kw">@M</b>
+									<div class="intent_subsectioncontainer">
+									consistencyCheckerActor {<br/>
+										<div class="intent_subsectioncontainer">
+										participatesInProcesses += <i style="font-style:italic">consistencyCheckingProcess</i>;<br/>
+										followObjectives += <i style="font-style:italic">dataIntegrityObjective</i>;								
+										</div>
+									}<br/>
+									</div>
+								<b class="kw">M@</b>								
+								</div>
+						</div>
+					}<br/>
+				</div>
+				}
+				
+							</div>
+	</div>
   </slide>
+    <slide class="partNONE">
+    <hgroup>
+      <h2>
+		One <b>Intent Document</b> mixing both
+	  </h2>
+    </hgroup>
+		<div class="intent_content greyed">
+			Chapter Logical Target Business Architecture {
+				<div class="intent_subsectioncontainer">
+				<div class="du">
+					This chapter aims to describe the system users/actors in scope for <br/>
+					the *Target Architecture*. System actors/users are those users who <br/>
+					*interact with a system*. They can be human or a system/computer.<br/>
+				</div>
+					<br/>SectionComputer Actors{
+						<div class="intent_subsectioncontainer">
+								<div class="du">
+									One of the most relevant <i style="font-style:italic">_Computer Actor_</i> is the *Consistency Checker*.<br/>
+									Whenever changes occur on the Travel Agency database, it verify all consistency constraints defined on the system.
+								</div>
+								<div class="intent_modelingunit">
+								<b class="kw">@M</b><br/>
+								<div class="intent_subsectioncontainer">
+								<b class="kw">new</b> Actor <span class="stroke focused" >consistencyCheckerActor</span> {<br/>
+										<div class="intent_subsectioncontainer">
+										name = <i style="color:blue">"Consistency Checker"</i>;<br/>
+										type = ActorType.Computer;<br/>
+										</div>
+									}<br/>
+									</div>
+								<b class="kw">M@</b>
+								</div></div>
+							}						
+						
+						<hr/>
+					<div style="text-align:center;padding-right:30px;margin-top:0px;font-size: 16px;">
+					<b>[...]</b>
+					</div>
+					<hr/>
+					Section Process Steps mapped to Actors {
+						<div class="intent_subsectioncontainer">
+							<div class="du">
+								The *Consistency Checker* Actor participates to the <i style="font-style:italic">_Consistency Checking_</i> Process,<br/>
+								which helps achieving the <i style="font-style:italic">_Manage the data integrity_</i> Business Objective.<br/>
+							</div>
+							<div class="intent_modelingunit">
+								<b class="kw">@M</b>
+									<div class="intent_subsectioncontainer">
+									consistencyCheckerActor {<br/>
+										<div class="intent_subsectioncontainer">
+										participatesInProcesses += <i style="font-style:italic">consistencyCheckingProcess</i>;<br/>
+										followObjectives += <i style="font-style:italic">dataIntegrityObjective</i>;								
+										</div>
+									}<br/>
+									</div>
+								<b class="kw">M@</b>								
+								</div>
+						</div>
+					}<br/>
+				</div>
+				}
+				
+							</div>
+	</div>
+  </slide>
+    <slide class="partNONE">
+    <hgroup>
+      <h2>
+		One <b>Intent Document</b> mixing both
+	  </h2>
+    </hgroup>
+		<div class="intent_content greyed">
+			Chapter Logical Target Business Architecture {
+				<div class="intent_subsectioncontainer">
+				<div class="du">
+					This chapter aims to describe the system users/actors in scope for <br/>
+					the *Target Architecture*. System actors/users are those users who <br/>
+					*interact with a system*. They can be human or a system/computer.<br/>
+				</div>
+					<br/>SectionComputer Actors{
+						<div class="intent_subsectioncontainer">
+								<div class="du">
+									One of the most relevant <i style="font-style:italic">_Computer Actor_</i> is the *Consistency Checker*.<br/>
+									Whenever changes occur on the Travel Agency database, it verify all consistency constraints defined on the system.
+								</div>
+								<div class="intent_modelingunit">
+								<b class="kw">@M</b><br/>
+								<div class="intent_subsectioncontainer">
+								<b class="kw">new</b> Actor consistencyCheckerActor {<br/>
+										<div class="intent_subsectioncontainer">
+										name = <i style="color:blue">"Consistency Checker"</i>;<br/>
+										type = ActorType.Computer;<br/>
+										</div>
+									}<br/>
+									</div>
+								<b class="kw">M@</b>
+								</div></div>
+							}						
+						
+						<hr/>
+					<div style="text-align:center;padding-right:30px;margin-top:0px;font-size: 16px;">
+					<b>[...]</b>
+					</div>
+					<hr/>
+					Section Process Steps mapped to Actors {
+						<div class="intent_subsectioncontainer">
+							<div class="du">
+								The *Consistency Checker* Actor participates to the <i style="font-style:italic">_Consistency Checking_</i> Process,<br/>
+								which helps achieving the <i style="font-style:italic">_Manage the data integrity_</i> Business Objective.<br/>
+							</div>
+							<div class="intent_modelingunit">
+								<b class="kw">@M</b>
+									<div class="intent_subsectioncontainer">
+									<span class="focused stroke" >consistencyCheckerActor</span> {<br/>
+										<div class="intent_subsectioncontainer">
+										participatesInProcesses += <i style="font-style:italic">consistencyCheckingProcess</i>;<br/>
+										followObjectives += <i style="font-style:italic">dataIntegrityObjective</i>;								
+										</div>
+									}<br/>
+									</div>
+								<b class="kw">M@</b>								
+								</div>
+						</div>
+					}<br/>
+				</div>
+				}
+				
+							</div>
+	</div>
+  </slide>
+
+       <slide class="partNONE" style="background: url(images/Intent/linked_doc_step2.png); background-size: 90%;background-position:30px 0px;background-color:white; background-repeat : no-repeat;">
+  </slide>
+  
+     <slide class="partNONE" style="background: url(images/Intent/linked_doc_step3.png); background-size: 90%;background-position:30px 0px;background-color:white; background-repeat : no-repeat;">
+  </slide>
+   <slide class="partNONE" style="background: url(images/Intent/linked_doc_step4.png); background-size: 90%;background-position:30px 0px;background-color:white; background-repeat : no-repeat;">
+  </slide>
+  
+  
   
   <slide class="segue nobackground partTitle" style="background: url(images/Intent/inAction.jpg); background-size: 100%;">
 	  <h2 style="left:550px;top:0px;">3. Intent in Action</h2>
@@ -275,25 +540,31 @@ URL: https://code.google.com/p/io-2012-slides
   <slide class="part3">
     <hgroup>
       <h2>
-		SmartEA
+		Intent applied to <b>Enterprise Architecture</b>
 	  </h2>
-	   <ul >
-		<li>EA : many many documents, information is hard to maintain</li>
-       </ul>
+	  </hgroup>		
     </hgroup>
+	<article>
+	 <img class="reflect" src="images/Intent/smartEA.png" style="float:left;padding-right:40px"/>
+	<div style="padding-top:20px">
+	- <b>SmartEA</b>:  provides modelers to manage <b>Enterprise Architecture</b> models<br/>
+	<br/>- based on the TOGAF methodology
+	
+	 </div><div style="clear:both"/>
+	 <p style="text-align:right;">
+	 <br/>
+	<img src="images/Intent/smartEA/togaf.png" style="height:60%;float:right;padding-right:20px"/><br/> <br/><br/><br/>
+	-EA models contain business-critical informations <br/>
+	
+	 <br/>- Many Documents to store the intents behind EA models
+	 </p>
+	 
+	<div style="clear:both"/>
+	
+		</article>
   </slide>
   
-  <slide class="part3">
-    <hgroup>
-      <h2>
-		SmartEA
-	  </h2>
-	  <article>
-      <iframe data-src="./demos/Untitled/Untitled.html"></iframe>
-    </article>
-    </hgroup>
-  </slide>
-  
+    
   <slide class="segue nobackground partTitle" style="background: url(images/Intent/share1.jpg); background-size: 100%;">
 	  <h2 style="top:550px;left:100px;";>4. Documentation sharing sucks</h2>
 	  <aside style="width:920px;top:585px;" class="gdbar" ></aside>
@@ -313,18 +584,89 @@ URL: https://code.google.com/p/io-2012-slides
   <slide class="part4">
     <hgroup>
       <h2>
-		Intent: a <b>distributed architecture</b>
+		Intent: <b>share</b> your doc in real-time
 	  </h2>
-	   <ul >
-		<li>Very quick CDO démo</li>
-       </ul>
+	  <article>
+	  <iframe style="margin-left:-95px;padding-top:50px;width:1190px;height:475px" data-src="demos/cdo/cdo/cdo_player.html"></iframe>
+	  </article>
     </hgroup>
   </slide>
   
     <slide class="segue nobackground partTitle" style="background: url(images/Intent/ariadne_bg.png); background-size: 100%;">
 	  <h2>5. To code synchronization and beyond</h2>
 	  <aside style="width:960px" class="gdbar" ></aside>
-	  <img  style="margin-top:100px;position:relative;top:20px;left:-70px;width:110%" src="images/Intent/ariadne_white.png"/>
+	  <img  style="margin-top:100px;position:relative;top:-200px;left:100px;width:80%" src="images/Intent/maze.png"/>
+  </slide>
+  
+  <slide class="partNONE" style="background: url(images/Intent/sync01.png); background-size: 90%;background-position:30px 0px;background-color:white; background-repeat : no-repeat;">
+  <div class="paddinger" style="position:relative;top:200px;left:280px;text-align:center;width:250px">
+		<h3 style="padding:0px 0px 0px 0px;">Intent <b>Synchronizer</b></h3>
+		<hr/>
+		<span style="font-size:18px">
+		Compares Doc (Model Fragments)  with Artifacts (as Models)</span>
+  </div>
+
+  </slide>
+  
+  
+  <slide class="partNONE" style="background: url(images/Intent/sync02.png); background-size: 90%;background-position:30px 0px;background-color:white; background-repeat : no-repeat;">
+ <div class="paddinger" style="position:relative;top:200px;left:280px;text-align:center;width:250px">
+		<h3 style="padding:0px 0px 0px 0px;">Intent <b>Synchronizer</b></h3>
+		<hr/>
+		<span style="font-size:18px">
+		Compares Doc (Model Fragments)  with Artifacts (as Models)</span>
+  </div>
+      <div class="paddinger" style="position:relative;top:300px;left:100px;text-align:center;width:250px">
+		<h3 style="padding:0px 0px 0px 0px;">Synchronization <b>Bridge</b></b></h3>
+		<hr/>
+		<span style="font-size:18px">
+		Represent a technical artifact (Java class, plugin.xml...) as a Model</span>
+  </div>
+  </slide>
+   <slide class="part5">
+    <hgroup>
+      <h2>
+		<b>Ariadne</b>: leverage the data of your IDE
+	  </h2>
+	  <article style="padding-top:100px;padding-right:30px;">
+	  <img  class="reflect" src="images/Intent/ariadne.png" style="width:30%;float:left;"/><br/><br/>
+		  - Extracts Technical Artifacts (Java code, GIT commits, bugzilla issues, plugin dependencies...) <b>as Models</b><br/><br/><br/>
+		 - Allows to <b>formalize constraints</b> (automate guidelines checking)
+	   </article>
+    </hgroup>
+  </slide>
+  
+  
+    <slide class="three_things">
+    <hgroup>
+      <h2>
+		The 3 things to remember about Intent
+	  </h2>
+	  <article style="padding-top:100px;padding-right:30px;">
+	  <br/>1. Intent keeps your doc up-to-date with concrete world<br/>
+	  <br/>2. Intent allows you to check constraints<br/>
+	  <br/>3. Intent allows real-time collaboration around Doc<br/>
+	   </article>
+    </hgroup>
+  </slide>
+  
+   <slide class="thanks">
+    <hgroup>
+      <h2>
+		Thank You!
+	  </h2>
+    </hgroup>
+
+
+		<article>
+		<img class="reflect" src="images/contact/website.png"  style="width:50px"/> <a href="http://www.eclipse.org/intent">http://www.eclipse.org/intent</a>
+		<br/><br/> <img class="reflect" src="images/Intent/Image-Intent_logo_cropped.png"  style="width:50px"/> <a href="http://wiki.eclipse.org/Intent">http://wiki.eclipse.org/Intent</a>
+		<br/><br/> <img class="reflect" src="images/contact/twitter.jpg" style="width:50px"/> @Intent_project
+		
+		<!--<p style="text-align:center">
+		 <img class="reflect" src="images/Intent/doc/rtfm_car.jpg" style="padding-top:20px;width:75%"/> 
+		</p>-->
+	   </article>
   </slide>
   
   <slide class="backdrop"></slide>

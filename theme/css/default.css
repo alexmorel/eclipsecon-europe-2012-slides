@@ -319,17 +319,7 @@ slides > slide:not(.nobackground):after {
 }
 /* line 194, ../scss/default.scss */
 slides > slide.title-slide:after {
-  content: '';
-  background: url(../../images/Intent/europe2012_logo.jpg) no-repeat 100% 50%;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
-  position: absolute;
-  bottom: 40px;
-  right: 40px;
-  width: 100%;
-  height: 100px;
+ 
 }
 /* line 206, ../scss/default.scss */
 slides > slide.backdrop {
