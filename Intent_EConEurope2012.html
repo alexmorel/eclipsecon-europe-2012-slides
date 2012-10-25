@@ -186,7 +186,7 @@ URL: https://code.google.com/p/io-2012-slides
   <slide class="partNONE" style="background: url(images/Intent/linked_doc_step5b.png); background-size: 90%;background-position:30px 0px;background-color:white; background-repeat : no-repeat;">
   </slide>
   
-   <slide class="partNONE" style="background: url(images/Intent/smartEA/instead_of.png); background-size: 90%;background-position:30px 30px;background-color:white; background-repeat : no-repeat;">
+   <slide class="partNONE" style="background: url(images/Intent/smartEA/instead_of_v2.png); background-size: 90%;background-position:30px 30px;background-color:white; background-repeat : no-repeat;">
   </slide>
   
   <slide class="partNONE">
@@ -573,7 +573,7 @@ URL: https://code.google.com/p/io-2012-slides
    <slide class="part4">
     <hgroup>
       <h2>
-		Intent: a <b>distributed architecture</b>
+		Intent: <b>behind the Scene</b>
 	  </h2>
 	   <article class="flexbox vcenter auto-fadein">
 	   <img src="images/Intent/Architecture_repository.png"/>
@@ -663,9 +663,32 @@ URL: https://code.google.com/p/io-2012-slides
 		<br/><br/> <img class="reflect" src="images/Intent/Image-Intent_logo_cropped.png"  style="width:50px"/> <a href="http://wiki.eclipse.org/Intent">http://wiki.eclipse.org/Intent</a>
 		<br/><br/> <img class="reflect" src="images/contact/twitter.jpg" style="width:50px"/> @Intent_project
 		
-		<!--<p style="text-align:center">
-		 <img class="reflect" src="images/Intent/doc/rtfm_car.jpg" style="padding-top:20px;width:75%"/> 
-		</p>-->
+		<h2><br/><br/>
+		Don't forget to give Feedback <br/>
+		 <img class="reflect" style="padding-top:20px" src="images/Intent/feedback.png"/> 
+		</h2>
+	   </article>
+  </slide>
+  
+   <slide class="thanks">
+    <hgroup>
+      <h2>
+		Questions asked during the talk
+	  </h2>
+    </hgroup>
+
+
+		<article>
+		<ul><li><b>Ok, I understood that the Synchronization Bridge mechanism allows to synchronize technical artifacts.
+		What are the current Synchronization Bridges? Can I synchronize Java code?</b><br/><br/>
+		> No, not right now. However, we plan to integrate Intent with Ariadne for the Kepler release, and that will allows us to synchronize Java files, Manifests, Mylyn tasks, Git repositories...
+		</li>
+		<br/><br/><br/><br/><li><b>The Model Fragments syntax of Intent is far too complex for an end-user, could you hide them?</b><br/><br/>
+		> Yes, that is one of the things I have in mind. As Intent provides tooling for linking a piece of doc with a technical artifact (Drag'n'Drop) and to fix synchronization issues (quick-fixes), you never have to edit
+		those Model Fragements manually. <br/>
+		Consequently, we could provide a
+		simplified Intent editor which hides Model Fragments. Then you will just have a pure documentation, that is linked with technical artifacts behind the scene.
+		</li>
 	   </article>
   </slide>
   
