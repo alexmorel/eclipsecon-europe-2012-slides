@@ -1,8 +1,7 @@
 var SLIDE_CONFIG = {
   // Slide settings
   settings: {
-    title: 'It\'s 2012 and your documentation sucks',
-    subtitle: '....or what should you do to proudly say "RTFM"',
+    title: 'Documentation Driven Testing',
     useBuilds: true, // Default: true. False will turn off slide animation builds.
     usePrettify: true, // Default: true
     enableSlideAreas: true, // Default: true. False turns off the click areas on either slide of the slides.
@@ -18,8 +17,8 @@ var SLIDE_CONFIG = {
 
   // Author information
   presenters: [{
-    name: 'Alex Lagarde (Morel)',
-    company: 'Software Engineer, Obeo',
+    name: 'Goulwen Le Fur & Alex Lagarde (Morel)',
+    company: 'Software Engineers, Obeo',
     gplus: 'https://plus.google.com/117030173458875569066',
     twitter: '@yourhandle',
     www: 'http://www.you.com',
