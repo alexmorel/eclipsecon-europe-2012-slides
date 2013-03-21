@@ -38,8 +38,8 @@ URL: https://code.google.com/p/io-2012-slides
       <h2 data-config-subtitle class="stroke white"><!-- populated from slide_config.json --></h2>
 	  <br/><br/><br/><br/><br/>
 	  <p style="font-size:27px" data-config-presenter class="stroke white"><!-- populated from slide_config.json --></p>
-	 	<p style="font-size:27px;width:300px;margin-top:-35px; margin-left:830px"><span class="stroke white">EclipseCon Europe</span>
-		<span class="stroke white" >2012</span></p>
+	 	<p style="font-size:27px;width:300px;margin-top:-35px; margin-left:830px"><span class="stroke white">EclipseCon Boston</span>
+		<span class="stroke white" >2013</span></p>
 	  </div>
     </hgroup>	
 
@@ -60,8 +60,8 @@ URL: https://code.google.com/p/io-2012-slides
 		<p>
 		 Context & Needs
 		 </p>
-		</article>
-	</slide>
+	</article>
+   </slide>
   
 
   <slide class="segue nobackground partTitle" style="background: url(images/DDT/part2.png); background-size: 100%;">
@@ -69,11 +69,192 @@ URL: https://code.google.com/p/io-2012-slides
 	  <aside style="width:875px" class="gdbar" ></aside>
   </slide>
   
-  <slide class="segue nobackground partTitle" style="background: url(images/DDT/part3.png); background-size: 100%;">
-	  <h2>3. Keep non-formal specifications in sync. with Intent</h2>
-	  <aside style="width:875px" class="gdbar" ></aside>
+  <!--
+   <slide class="title-slide segue nobackground partTitle" style="background: url(images/Intent/part2.jpg); background-size: 100%;">    
+	<h2 style="margin-top:400px;margin-left:-50px;width:1900px">3. Synchronizing Tests with Documentation</h2>
+	<aside class="gdbar" style="margin-top:80px;width: 350px;">	
+		<img style=" width: 261px;height: 85px;position: absolute;right: 0;margin: 8px 15px;" 
+	src="images/Intent/Image-Intent_logo.png">
+	</aside>
+  -->
+   <slide class="title-slide segue nobackground"
+   style="background: url(images/Intent/Image-Intent_logo.png);background-position:150px 300px;background-repeat:no-repeat;background-size: 70%;">    
+	<aside class="gdbar" style="margin-top:-50px;width: 1900px;">	
+		<h2 style="margin-top:25px;margin-left:110px;width:1900px;color:black">3. Synchronize Tests with Documentation</h2>
+	</aside>
   </slide>
  
+ <slide class="part3">
+    <hgroup>
+      <h2>
+		Mylyn <b>Intent</b>
+	  </h2>
+    </hgroup>
+    <article class="auto-fadein noBullets">
+		<p>
+		 <img class="build" src="images/Intent/doc/doc_monster.png"  style="float:left;padding-right:15px;width:25%"/> 
+		 <h3 style="color:black"><b>Keeping doc synchronized</b> with Software is a burden</h3>		 
+		 <p>
+		  So you keep breaking specifications without realizing it
+		 </p>
+		 <div style="clear:both"/>
+		 <br/><br/><br/>
+		 <h3 style="color:black">Clear <b>lack of tooling</b> to react to changes</h3>		 
+		 <p>
+			That is exactly what Intent is about
+		 </p>
+	</article>
+   </slide>
+
+   <slide class="part3" style="background: url(images/Intent/linked_doc.png); background-size: 90%;background-position:30px 0px;background-color:white; background-repeat : no-repeat;">
+	<div class="auto-fadein paddinger" style="position:relative;top:100px;text-align:center;width:62%">
+		<h2>How does Intent keep Doc synchronized?</h2>
+		<hr/>
+		By <b>linking</b> documentation parts with technical<br/> artifacts (Java code, models, plug-in dependencies...)
+		</div>
+  </slide>
+  
+  <slide class="part3" style="background: url(images/Intent/linked_doc_step2a.png); background-size: 90%;background-position:30px 0px;background-color:white; background-repeat : no-repeat;">
+  </slide>
+  
+  <slide class="part3" style="background: url(images/Intent/linked_doc_step5b.png); background-size: 90%;background-position:30px 0px;background-color:white; background-repeat : no-repeat;">
+  </slide>
+  
+   <slide class="partNONE" style="background: url(images/Intent/smartEA/instead_of_v2.png); background-size: 90%;background-position:30px 30px;background-color:white; background-repeat : no-repeat;">
+  </slide>
+  
+  <slide class="part3">
+    <hgroup>
+      <h2>
+		One <b>Intent Document</b> mixing both
+	  </h2>
+    </hgroup>
+			<p style="padding-left:50px;padding-top:50px;color:black">
+				<span style="">- Pure documentation zones<br/></span>
+				<br/>
+				<span style">- Formal links zones<br/></span>
+				<br/>
+			</p>
+		<div class="intent_content">
+			<b class="kw">Chapter</b> <b>Significant Scenarios</b> {
+				<div class="intent_subsectioncontainer">
+				<div class="du"><br/>
+					This chapter specifies the behavior of the <b>*my.plugin*</b> plugin by listing relevant scenarios.<br/> These scenarios can involve both
+					human actors or computer/system actors, as defined in chapter 1.5.
+				</div>
+					<br/><b class="kw">Section</b> <b>Scenario S-01: get source of a Java method</b> {
+						<div class="intent_subsectioncontainer">
+								<div class="du"><br/>
+										<b>*As a*</b> end-user<br/>
+										<b>*Given*</b> a <i>_Java class_</i> containing a non-abstract method<br/>
+										<b>*Then*</b> when getting the model representation of this Java Class<br/>
+									the source of each method should be the exact source of the java method<br/><br/>
+								</div>
+								<div class="intent_modelingunit">
+								<b class="kw">@M</b><br/>
+								<div class="intent_subsectioncontainer">
+								<b class="kw">@ref</b><i style="color:blue"> "org.eclipse.my.plugin.tests/src/org/eclipse/my/plugin/tests/GetJavaMethodSourceTest.java"</i>
+									<br/>
+								</div>
+								<b class="kw">M@</b>
+								</div></div>
+							}	
+				</div>
+				}
+				
+			</div>
+			<br/>
+
+  </slide>
+  
+   <slide class="part3">
+    <hgroup>
+      <h2>
+		One <b>Intent Document</b> mixing both
+	  </h2>
+    </hgroup>
+		<p style="padding-left:50px;padding-top:50px;color:black">
+			<span style="">- Pure documentation zones<br/>
+				<span style="padding-left:30px;">Explanations in Natural language<br/></span>
+				<span style="padding-left:30px;">Use the <b>Textile</b> syntax<br/><br/></span>
+			</span>
+		</p>
+		<div class="intent_content">
+			<b class="kw">Chapter</b> <b>Significant Scenarios</b> {
+				<div class="intent_subsectioncontainer">
+				<div class="du"><br/>
+					This chapter specifies the behavior of the <b>*my.plugin*</b> plugin by listing relevant scenarios.<br/> These scenarios can involve both
+					human actors or computer/system actors, as defined in chapter 1.5.
+				</div>
+					<br/><b class="kw">Section</b> <b>Scenario S-01: get source of a Java method</b> {
+						<div class="intent_subsectioncontainer">
+								<div class="du"><br/>
+										<b>*As a*</b> end-user<br/>
+										<b>*Given*</b> a <i>_Java class_</i> containing a non-abstract method<br/>
+										<b>*Then*</b> when getting the model representation of this Java Class<br/>
+									the source of each method should be the exact source of the java method<br/><br/>
+								</div>
+								<div class="greyed">
+								<div class="intent_modelingunit" style="background-color:#F8F8F8;color:grey;font-size: 14px;">
+								@M<br/>
+								<div class="intent_subsectioncontainer">
+								@ref "org.eclipse.my.plugin.tests/src/org/eclipse/my/plugin/tests/GetJavaMethodSourceTest.java"
+									</div>
+								M@
+								</div>
+								</div>
+													
+						</div>}				
+				</div>
+				}
+				
+		</div>
+  </slide>
+  
+    
+  <slide class="part3">
+    <hgroup>
+      <h2>
+		One <b>Intent Document</b> mixing both
+	  </h2>
+    </hgroup>
+		<p style="padding-left:50px;padding-top:50px;color:black">
+			<span style="">- Formal links zones<br/>
+				<span style="padding-left:30px;">Reference to technical artifacts (Java, models, Manifests...)<br/></span>
+				<span style="padding-left:30px;">Extensible behavior (display, hyperlinks, validation...)<br/><br/></span>
+			</span>
+		</p>
+		<div class="intent_content greyed">
+			Chapter Significant Scenarios {
+				<div class="intent_subsectioncontainer">
+				<div class="du">
+					This chapter specifies the behavior of the *my.plugin* plugin by listing relevant scenarios.<br/>
+					These scenarios can involve both
+					human actors or computer/system actors, as defined in chapter 1.5.
+				</div>
+					<br/>SectionComputer Actors{
+						<div class="intent_subsectioncontainer">
+								<div class="du">
+										*As a* end-user<br/>
+										*Given* a _Java class_ containing a non-abstract method<br/>
+										*Then* when getting the model representation of this Java Class<br/>
+									the source of each method should be the exact source of the java method<br/><br/>
+								</div>
+								<div class="intent_modelingunit">
+								<b class="kw">@M</b><br/>
+								<div class="intent_subsectioncontainer">
+								<b class="kw">@ref</b><i style="color:blue"> "org.eclipse.my.plugin.tests/src/org/eclipse/my/plugin/tests/GetJavaMethodSourceTest.java"</i>
+									<br/>
+								</div>
+								<b class="kw">M@</b>
+								</div></div>
+						}<br/>
+				</div>
+				}
+				
+							</div>
+	</div>
+  </slide>
   <slide class="segue nobackground partTitle" style="background: url(images/DDT/part4.png); background-size: 100%;">
 	  <h2>4. A Step further / What's cooking</h2>
 	  <aside style="width:875px" class="gdbar" ></aside>

@@ -133,7 +133,7 @@ slides > slide.part1:before {
   -moz-background-size: 30px 30px;
   -o-background-size: 30px 30px;
   background-size: 30px 30px;
-  content: "1. Documentation Sucks";
+  content: "1. Introduction";
 }
 
 slides > slide.part2:before {
@@ -142,16 +142,16 @@ slides > slide.part2:before {
   -moz-background-size: 30px 30px;
   -o-background-size: 30px 30px;
   background-size: 30px 30px;
-  content: "2. Synchronize your doc with Intent";
+  content: "2. TITLE HERE";
 }
 
 slides > slide.part3:before {
-  background: url(../../images/Intent/smartEA.png) no-repeat 0 50%;
+  background: url(../../images/Intent/Image-Intent_logo_cropped.png) no-repeat 0 50%;
     -webkit-background-size: 30px 30px;
   -moz-background-size: 30px 30px;
   -o-background-size: 30px 30px;
   background-size: 30px 30px;
-  content: "3. Intent applied to Enterprise Architecture";
+  content: "3. Mylyn Intent: keep specifications synchronized";
 }
 slides > slide.part4:before {
   background: url(../../images/Intent/cdo.jpg) no-repeat 0 50%;
@@ -159,15 +159,7 @@ slides > slide.part4:before {
   -moz-background-size: 30px 30px;
   -o-background-size: 30px 30px;
   background-size: 30px 30px;
-  content: "4. Documentation sharing sucks";
-}
-slides > slide.part5:before {
-  background: url(../../images/Intent/ariadne.png) no-repeat 0 50%;
-    -webkit-background-size: 30px 30px;
-  -moz-background-size: 30px 30px;
-  -o-background-size: 30px 30px;
-  background-size: 30px 30px;
-  content: "5. To code synchronization and beyond";
+  content: "4. TITLE HERE";
 }
 slides > slide.partNONE:before {
  background-size: 0px 0px;
