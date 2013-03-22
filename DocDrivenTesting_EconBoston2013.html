@@ -26,18 +26,19 @@ URL: https://code.google.com/p/io-2012-slides
 
 <slides class="layout-widescreen">
 
-  <slide class="title-slide segue nobackground" style="background: url(images/Intent/doc/rtfm.jpg); background-size: 100%;">
-	<aside class="gdbar" style="width: 350px;">	
-		<img style=" width: 261px;height: 85px;position: absolute;right: 0;margin: 8px 15px;" 
-	src="images/Intent/Image-Intent_logo.png">
+  <slide class="title-slide segue nobackground partTitle" style="background: url(images/Intent/doc/rtfm_car.jpg);background-position:-220px 0px; background-size: 140%;">
+	<h2 style="left:100px;top:0px;"> Documentation Driven Testing</h2>
+	<aside class="gdbar" style="top:50px;width: 1900px;height:80px;">	
 	</aside>
+	<h3 style="margin-left:100px;margin-top:0px;color:black;font-size:40px">Leverage your documentation to improve your tests</h3>
+	
     <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
     <hgroup style="position:relative;left:-100px;top:250px;padding: 0px 0px 0px 0px;margin:0px 0px 0px 0px;">
 		<div>
-      <h1 data-config-title class="stroke white"><!-- populated from slide_config.json --></h1>
-      <h2 data-config-subtitle class="stroke white"><!-- populated from slide_config.json --></h2>
-	  <br/><br/><br/><br/><br/>
-	  <p style="font-size:27px" data-config-presenter class="stroke white"><!-- populated from slide_config.json --></p>
+      <h1  style="display:none" data-config-title class="stroke white"><!-- populated from slide_config.json --></h1>
+      <h2  style="display:none" data-config-subtitle class="stroke white"><!-- populated from slide_config.json --></h2>
+	  <br/><br/><br/>
+	  <p style="font-size:27px" class="stroke white">Goulwen Le Fur <br/>Alex Lagarde (Morel)<br/>Software Engineers, Obeo</p>
 	 	<p style="font-size:27px;width:300px;margin-top:-35px; margin-left:830px"><span class="stroke white">EclipseCon Boston</span>
 		<span class="stroke white" >2013</span></p>
 	  </div>
@@ -45,25 +46,84 @@ URL: https://code.google.com/p/io-2012-slides
 
   </slide>
 
-  <slide class="segue nobackground partTitle" style="background: url(images/DDT/part1.png); background-size: 100%;">
-	  <h2 style="top:-20px">1. Introduction</h2>
-	  <aside style="top:20px; width:650px" class="gdbar" ></aside>
-  </slide>
-
   <slide class="part1">
     <hgroup>
       <h2>
-		Introduction
+		My <b>Problem</b>
 	  </h2>
     </hgroup>
-    <article class="auto-fadein noBullets">
-		<p>
-		 Context & Needs
+    <article class="noBullets">
+		<h3>Developer of the EEF project</h3>
+		<ul> 
+		<li>A presentation framework for EMF</li>
+		<li>Based on SWT</li>
+		<li>An Eclipse Project</li>
+		</ul>
+
+		<h3 >As all software developers, need to create tests</h3>
+		<ul > <li>Especially functional tests</li></ul>
+
+		<h3>GUI testing is never an easy task</h3>
+
+		<h3  >Last stumbling block:</h3>
+		<ul  > 	<li> The need for an Open Source solution</li>
+		</ul>
 		 </p>
 	</article>
    </slide>
-  
+  <slide class="part1">
+    <hgroup>
+      <h2>
+		First steps toward the solution
+	  </h2>
+    </hgroup>
 
+    <article class="noBullets">
+		<img src="images/DDT/robot.jpg" style="margin-top:-100px;padding-right:50px;float:right; height:50%"/>
+		<h3>First event leading to the solution</h3>
+		<ul> 
+		<li> <b>SWTBot</b> project creation</b></li>
+		</ul>
+
+		<h3 >Allows creation of a Bot</h3>
+		<ul > <li>Able to handle SWT GUIs</li></ul>
+		<div style="clear:both"/>
+		
+		<br/>
+		<h3>A fluent syntax enables users to define the scenario performed by the bot</h3>
+		<img src="images/DDT/first swtbot.png" style="padding-left:100px"/>
+		 </p>
+	</article>
+   </slide>
+   
+   <slide class="nobackground">
+    <hgroup>
+      <h2>
+		Great! I have my tests <b>but...</b>
+	  </h2>
+    </hgroup>
+
+		<h3 style="padding-top:20px">Despite of the fluent syntax</h3>
+		<ul> 
+		<li>Tests require many source code</li>
+		<li>Test code is complicated, only developers can write it</li>
+		<li>The tests understanding is only based on JavaDoc</li>
+		</ul>
+		<h3 ><b>Maintenance</b> remains very complicated</h3>		
+		<img src="images/DDT/SWTBot_complicated1.png" style="padding-left:30px;margin-top:-10px"/>
+   </slide>
+   
+  <slide class="segue nobackground partTitle" style="background: url(images/DDT/utopia.jpg); background-size: 100%;">
+	  <h2 style="top:465px;padding-left:50px;">Utopia?</h2>
+	  <aside style="top:500px;width:350px" class="gdbar" ></aside>
+  </slide>
+  
+  <slide class="segue nobackground partTitle" style="background: url(images/DDT/army.jpg); background-size: 100%;">
+	  <h2 style="margin-top:-130px;padding-left:0px;color:black;text-shadow:none">Nope ! Obeo is a software toolmaker!</h2>
+	  <h2 style="margin-top:80px;margin-left:-50px;">We'll make a tooling<br/> for SWTBot!</h2>
+
+  </slide>
+  
   <slide class="segue nobackground partTitle" style="background: url(images/DDT/part2.png); background-size: 100%;">
 	  <h2>2. Formalize Specifications with the ModelingBot Framework</h2>
 	  <aside style="width:875px" class="gdbar" ></aside>
@@ -92,7 +152,7 @@ URL: https://code.google.com/p/io-2012-slides
     </hgroup>
     <article class="auto-fadein noBullets">
 		<p>
-		 <img class="build" src="images/Intent/doc/doc_monster.png"  style="float:left;padding-right:15px;width:25%"/> 
+		 <img  src="images/Intent/doc/doc_monster.png"  style="float:left;padding-right:15px;width:25%"/> 
 		 <h3 style="color:black"><b>Keeping doc synchronized</b> with Software is a burden</h3>		 
 		 <p>
 		  So you keep breaking specifications without realizing it
