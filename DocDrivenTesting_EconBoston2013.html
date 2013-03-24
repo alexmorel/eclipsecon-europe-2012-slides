@@ -46,7 +46,7 @@ URL: https://code.google.com/p/io-2012-slides
 
   </slide>
 
-  <slide class="part1">
+  <slide class="intro">
     <hgroup>
       <h2>
 		My <b>Problem</b>
@@ -71,15 +71,15 @@ URL: https://code.google.com/p/io-2012-slides
 		 </p>
 	</article>
    </slide>
-  <slide class="part1">
+  <slide class="intro" style="background: url(images/DDT/robot.jpg);background-repeat:no-repeat;background-position:545px 0px;">
     <hgroup>
       <h2>
 		First steps toward the solution
 	  </h2>
     </hgroup>
 
-    <article class="noBullets">
-		<img src="images/DDT/robot.jpg" style="margin-top:-100px;padding-right:50px;float:right; height:50%"/>
+    <article class="noBullets" >
+		
 		<h3>First event leading to the solution</h3>
 		<ul> 
 		<li> <b>SWTBot</b> project creation</b></li>
@@ -87,11 +87,10 @@ URL: https://code.google.com/p/io-2012-slides
 
 		<h3 >Allows creation of a Bot</h3>
 		<ul > <li>Able to handle SWT GUIs</li></ul>
-		<div style="clear:both"/>
 		
-		<br/>
+		<br/><br/>
 		<h3>A fluent syntax enables users to define the scenario performed by the bot</h3>
-		<img src="images/DDT/first swtbot.png" style="padding-left:100px"/>
+		<img src="images/DDT/first swtbot.png" style="margin-left:-20px"/>
 		 </p>
 	</article>
    </slide>
@@ -124,26 +123,142 @@ URL: https://code.google.com/p/io-2012-slides
 
   </slide>
   
-  <slide class="segue nobackground partTitle" style="background: url(images/DDT/part2.png); background-size: 100%;">
-	  <h2>2. Formalize Specifications with the ModelingBot Framework</h2>
+  <slide class="segue nobackground partTitle" style="background: url(images/DDT/part1.png); background-size: 100%;">
+	  <h2>1. Simplify tests development<span style="font-size:0px;">_</span></h2>
 	  <aside style="width:875px" class="gdbar" ></aside>
   </slide>
-  
-  <!--
-   <slide class="title-slide segue nobackground partTitle" style="background: url(images/Intent/part2.jpg); background-size: 100%;">    
-	<h2 style="margin-top:400px;margin-left:-50px;width:1900px">3. Synchronizing Tests with Documentation</h2>
-	<aside class="gdbar" style="margin-top:80px;width: 350px;">	
-		<img style=" width: 261px;height: 85px;position: absolute;right: 0;margin: 8px 15px;" 
-	src="images/Intent/Image-Intent_logo.png">
-	</aside>
-  -->
-   <slide class="title-slide segue nobackground"
-   style="background: url(images/Intent/Image-Intent_logo.png);background-position:150px 300px;background-repeat:no-repeat;background-size: 70%;">    
-	<aside class="gdbar" style="margin-top:-50px;width: 1900px;">	
-		<h2 style="margin-top:25px;margin-left:110px;width:1900px;color:black">3. Synchronize Tests with Documentation</h2>
-	</aside>
+     <slide class="part1">
+    <hgroup>
+      <h2>
+		 First scenario: <b>Code generation</b>
+	  </h2>
+    </hgroup>
+	<br/><br/>
+		<h3>The idea</h3>
+		<ul><li>Ease the creation of tests with an <b>Acceleo generator</b></li></ul>
+	<br/>
+		<h3>Maintenance is partly ensured by</h3>
+		<img src="images/DDT/Image-Acceleo.png" style="float:right;width:55%;padding-right:100px"/>
+		<ul><li>Generator update</li></ul>
+		<ul><li>Regenerating tests</li></ul>
+		<br/>
+		<h3>With this solution</h3>
+<ul><li>we are able to produce more tests quickly</li>
+<li>And updating the code generator allows to synchronize all tests with a regeneration</li> </ul>
+
+   </slide>
+
+  <slide class="title-slide segue nobackground partTitle" style="background: url(images/DDT/hurray.jpg);background-size:100%;">    
+	 <h2 style="margin-top:400px;margin-left:450px;font-size:120px">Hurray!</h2>
   </slide>
+  
+  <slide class="part1">
+  
+  <hgroup>
+      <h2>
+		 But this <b>isn't </b>the end of the story!
+	  </h2>
+    </hgroup>
+	
+	<br/><br/>
+	<img src="images/DDT/not-the-end.jpg" style="float:left;width:35%;margin-right:60px"/>
+		<br/>
+		<h3>The increasing tests count</h3>
+		<br/>
+		<h3>The increasing functional coverage</h3>
+		<br/>
+		<h3>=> a code generator <b>hard	to maintain</b></h3>
+		<br/>
+  </slide>
+ <slide class="part1">
+ <h2>We need a plan B (a B plan?)</h2>
+ <img src="images/DDT/graph.png" style="padding-top:60px; padding-left:150px;width:74%"/>
+ </slide>
  
+ <slide class="part1">
+ <h2>Second scenario: Tests <b>modeling</b></h2>
+ 
+ <br/><br/>
+ <h3>3 required steps:</h3>
+	<ol style="color:black;padding-left:50px">
+	<li><br/>1. Create a DSL describing functional tests<br/></li>
+	<li><br/>2. Implement it with the Eclipse Modeling Project<br/></li>
+	<li><br/>3. Create a SWTBot interpreter for these test models<br/></li>
+	</ol>
+ </slide>
+ 
+ 
+ <slide class="title-slide segue nobackground partTitle" style="background: url(images/DDT/pen.jpg);background-size:100%;">    
+	 <h2 style="margin-top:350px;margin-left:80px;font-size:60px">What does a Functional Test Model look like ?</h2>
+  </slide>
+  
+  <slide class="part1">
+  <h2>Modeling Bot <i>(I)</i></h2>
+  <br/><br/>
+  <img src="images/DDT/ModelingBotPartI.png"/>
+  </slide>
+   <slide class="part1">
+  <h2>Modeling Bot <i>(II)</i></h2>
+  <br/><br/>
+  <img src="images/DDT/ModelingBotPartII.png"/>
+  </slide>
+  <slide class="part1">
+  <h2>Modeling Bot <i>(III)</i></h2>
+  <br/><br/>
+  <img src="images/DDT/ModelingBotPartIII.png"/>
+  </slide>
+    <slide class="part1">
+  <h2>A Test <b>model</b></i></h2>
+  <br/><br/>
+  <img src="images/DDT/Test-model.png" style="float:left;padding-right:80px"/>
+  <ul>
+	<li>Create a project
+	<li>Create a model</li>
+	<li>Ensure env. Ready</li>
+	<li>In a details page</li>
+	<li>Add a new concept</li>
+	<li>Edit property of this one</li>
+	<li>Save</li>
+	<li>Ensure editing well performed</li>
+	<li>Delete the project</li>
+  </ul>
+  </slide>
+  
+  
+   <slide class="segue nobackground partTitle" style="background: url(images/DDT/part1.png); background-size: 100%;">
+	  <h2>2. Open the tooling to functional users <span style="font-size:0px;">_</span></h2>
+	  <aside style="width:1005px" class="gdbar" ></aside>
+  </slide>
+    <slide class="part1">
+  <br/><br/>
+  <img src="images/DDT/awesome.jpg" style="float:right;padding-right:80px"/>
+  <br/><br/><br/><br/>
+  <h2>Awesome but...<br/><br/>How can I use that?</h2>
+  <!--<span style="margin-left:50px" >Need for an <b>efficient</b> test creation</span>-->
+  </slide>
+  <slide class="part2">
+  <h2>Toward an accessible tooling</h2>
+  
+  <br/><br/>
+  <h3>Using a Treeview to create test model isn't the best way...</h3>
+	<br/><br/>
+  <h3>This kind of model is well suited for a <b>textual syntax</b></h3>
+	<br/><br/>
+  <h3>Let's use the <img src="images/DDT/Xtext.png" style="width:15%"> project to create a textual syntax for our test DSL</h3>
+  
+  </slide>
+  
+  <slide class=" nobackground">
+  <h2>A <b>Grammar</b> for textual syntax</h2>
+  <br/>
+  <img src="images/DDT/XText grammar.png" style="float:left"/>
+  <img src="images/DDT/TextualModel.png" style="padding-top:100px;float:right"/>
+  </slide>
+     <slide class="segue nobackground partTitle" >
+	  <h2>3. Understand intents behind tests  <span style="font-size:0px;">_</span></h2>
+	  <aside style="width:1005px" class="gdbar" ></aside>
+	  <img style="margin-top:200px" src="images/Intent/Image-Intent_logo.png">
+  </slide>
  <slide class="part3">
     <hgroup>
       <h2>

@@ -4,7 +4,9 @@ b {
 article {
 	color:#515151;
 }
-
+h2, h3 {
+ color:black;
+}
 .stroke {
 text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
@@ -118,13 +120,12 @@ font-size:24px;
 font-size: 16px;
 }
 
-slides > slide.nutshell:before {
-  background: url(../../images/Intent/Image-Intent_logo_cropped.png) no-repeat 0 50%;
+slides > slide.intro:before {
     -webkit-background-size: 30px 30px;
   -moz-background-size: 30px 30px;
   -o-background-size: 30px 30px;
   background-size: 30px 30px;
-  content: "Intent in a nutshell";
+  content: "Introduction";
 }
 
 slides > slide.part1:before {
@@ -133,7 +134,7 @@ slides > slide.part1:before {
   -moz-background-size: 30px 30px;
   -o-background-size: 30px 30px;
   background-size: 30px 30px;
-  content: "1. Introduction";
+  content: "1. Simplifying tests development";
 }
 
 slides > slide.part2:before {
