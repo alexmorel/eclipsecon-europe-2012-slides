@@ -121,6 +121,7 @@ font-size: 16px;
 }
 
 slides > slide.intro:before {
+  background: url(../../images/Intent/Image-Intent_logo_croppedX.png) no-repeat 0 50%;
     -webkit-background-size: 30px 30px;
   -moz-background-size: 30px 30px;
   -o-background-size: 30px 30px;
@@ -129,21 +130,21 @@ slides > slide.intro:before {
 }
 
 slides > slide.part1:before {
-  background: url(../../images/Intent/Image-Intent_logo_cropped.png) no-repeat 0 50%;
+  background: url(../../images/Intent/Image-Intent_logo_croppedX.png) no-repeat 0 50%;
     -webkit-background-size: 30px 30px;
   -moz-background-size: 30px 30px;
   -o-background-size: 30px 30px;
   background-size: 30px 30px;
-  content: "1. Simplifying tests development";
+  content: "1. Simplify tests development";
 }
 
 slides > slide.part2:before {
-  background: url(../../images/Intent/Image-Intent_logo_cropped.png) no-repeat 0 50%;
+  background: url(../../images/Intent/Image-Intent_logo_croppedX.png) no-repeat 0 50%;
     -webkit-background-size: 30px 30px;
   -moz-background-size: 30px 30px;
   -o-background-size: 30px 30px;
   background-size: 30px 30px;
-  content: "2. TITLE HERE";
+  content: "2. Open the tooling to functional users";
 }
 
 slides > slide.part3:before {
@@ -152,15 +153,15 @@ slides > slide.part3:before {
   -moz-background-size: 30px 30px;
   -o-background-size: 30px 30px;
   background-size: 30px 30px;
-  content: "3. Mylyn Intent: keep specifications synchronized";
+  content: "3. Understand intents behind tests";
 }
 slides > slide.part4:before {
-  background: url(../../images/Intent/cdo.jpg) no-repeat 0 50%;
+  background: url(../../images/Intent/cdoX.jpg) no-repeat 0 50%;
     -webkit-background-size: 30px 30px;
   -moz-background-size: 30px 30px;
   -o-background-size: 30px 30px;
   background-size: 30px 30px;
-  content: "4. TITLE HERE";
+  content: "4. Lessons learned";
 }
 slides > slide.partNONE:before {
  background-size: 0px 0px;
@@ -168,7 +169,7 @@ slides > slide.partNONE:before {
 }
 
 slides > slide.three_things:before {
-  background: url(../../images/Intent/Image-Intent_logo_cropped.png) no-repeat 0 50%;
+  background: url(../../images/Intent/Image-Intent_logo_croppedX.png) no-repeat 0 50%;
     -webkit-background-size: 30px 30px;
   -moz-background-size: 30px 30px;
   -o-background-size: 30px 30px;
@@ -177,7 +178,7 @@ slides > slide.three_things:before {
 }
 
 slides > slide.thanks:before {
-  background: url(../../images/Intent/Image-Intent_logo_cropped.png) no-repeat 0 50%;
+  background: url(../../images/Intent/Image-Intent_logo_croppedX.png) no-repeat 0 50%;
     -webkit-background-size: 30px 30px;
   -moz-background-size: 30px 30px;
   -o-background-size: 30px 30px;

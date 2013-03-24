@@ -89,7 +89,7 @@ URL: https://code.google.com/p/io-2012-slides
 		<ul > <li>Able to handle SWT GUIs</li></ul>
 		
 		<br/><br/>
-		<h3>A fluent syntax enables users to define the scenario performed by the bot</h3>
+		<h3>A fluent syntax enabling users to define the scenario performed by the bot</h3>
 		<img src="images/DDT/first swtbot.png" style="margin-left:-20px"/>
 		 </p>
 	</article>
@@ -123,8 +123,8 @@ URL: https://code.google.com/p/io-2012-slides
 
   </slide>
   
-  <slide class="segue nobackground partTitle" style="background: url(images/DDT/part1.png); background-size: 100%;">
-	  <h2>1. Simplify tests development<span style="font-size:0px;">_</span></h2>
+  <slide class="segue nobackground partTitle" style="background: url(images/DDT/easy.jpg); background-size: 100%;">
+	  <h2>1. Simplify tests development <span style="font-size:0px;">_</span></h2>
 	  <aside style="width:875px" class="gdbar" ></aside>
   </slide>
      <slide class="part1">
@@ -139,11 +139,11 @@ URL: https://code.google.com/p/io-2012-slides
 	<br/>
 		<h3>Maintenance is partly ensured by</h3>
 		<img src="images/DDT/Image-Acceleo.png" style="float:right;width:55%;padding-right:100px"/>
-		<ul><li>Generator update</li></ul>
-		<ul><li>Regenerating tests</li></ul>
+		<ul><li>Generator updates</li></ul>
+		<ul><li>Tests regeneration</li></ul>
 		<br/>
 		<h3>With this solution</h3>
-<ul><li>we are able to produce more tests quickly</li>
+<ul><li>we are able to produce tests more quickly</li>
 <li>And updating the code generator allows to synchronize all tests with a regeneration</li> </ul>
 
    </slide>
@@ -171,7 +171,7 @@ URL: https://code.google.com/p/io-2012-slides
 		<br/>
   </slide>
  <slide class="part1">
- <h2>We need a plan B (a B plan?)</h2>
+ <h2>We need a plan B</h2>
  <img src="images/DDT/graph.png" style="padding-top:60px; padding-left:150px;width:74%"/>
  </slide>
  
@@ -225,7 +225,7 @@ URL: https://code.google.com/p/io-2012-slides
   </slide>
   
   
-   <slide class="segue nobackground partTitle" style="background: url(images/DDT/part1.png); background-size: 100%;">
+   <slide class="segue nobackground partTitle" style="background: url(images/DDT/open.png); background-size: 100%;">
 	  <h2>2. Open the tooling to functional users <span style="font-size:0px;">_</span></h2>
 	  <aside style="width:1005px" class="gdbar" ></aside>
   </slide>
@@ -254,10 +254,10 @@ URL: https://code.google.com/p/io-2012-slides
   <img src="images/DDT/XText grammar.png" style="float:left"/>
   <img src="images/DDT/TextualModel.png" style="padding-top:100px;float:right"/>
   </slide>
-     <slide class="segue nobackground partTitle" >
+     <slide class="segue nobackground partTitle" style="background: url(images/DDT/understand.jpg); background-size: 100%;">
 	  <h2>3. Understand intents behind tests  <span style="font-size:0px;">_</span></h2>
 	  <aside style="width:1005px" class="gdbar" ></aside>
-	  <img style="margin-top:200px" src="images/Intent/Image-Intent_logo.png">
+	
   </slide>
  <slide class="part3">
     <hgroup>
@@ -273,7 +273,8 @@ URL: https://code.google.com/p/io-2012-slides
 		  So you keep breaking specifications without realizing it
 		 </p>
 		 <div style="clear:both"/>
-		 <br/><br/><br/>
+		  <br/><br/><br/>
+		  <img style="float:left;padding-right:25px;width:23%" src="images/Intent/Image-Intent_logo.png">
 		 <h3 style="color:black">Clear <b>lack of tooling</b> to react to changes</h3>		 
 		 <p>
 			That is exactly what Intent is about
@@ -445,24 +446,44 @@ URL: https://code.google.com/p/io-2012-slides
 							</div>
 	</div>
   </slide>
-  <slide class="segue nobackground partTitle" style="background: url(images/DDT/part4.png); background-size: 100%;">
-	  <h2>4. A Step further / What's cooking</h2>
-	  <aside style="width:875px" class="gdbar" ></aside>
+  <slide class="segue nobackground partTitle" style="background: url(images/DDT/learn.jpg); background-size: 100%;background-position:0px -700px;">
+	  <h2 style="top:360px">4. Lessons learned</h2>
+	  <aside style="top:400px;width:505px" class="gdbar" ></aside>
   </slide> 
   
-    <slide class="three_things">
+  <slide class="part4">
     <hgroup>
       <h2>
-		The 3 things to remember about this talk
-	  </h2>
-	  <article style="padding-top:100px;padding-right:30px;">
-	  <br/>1. <br/>
-	  <br/>2. <br/>
-	  <br/>3. <br/>
-	   </article>
+	 Lessons learned
+	  </h2>	  
     </hgroup>
+	  <article style="padding-top:80px;padding-right:30px;">
+	  1. SWTBot is cool, but tests can be <b>hard to maintain & understand</b><br/>
+	  <br/>2. Capturing scenarios through models instead of code makes test <b>easier to maintain</b><br/>
+	  <br/>3. Providing a textual syntax to edit those models <b>improves user experience</b><br/>
+	  <br/>4. Using Intent to tie doc, models & code makes sure <b>intention is never lost</b><br/>
+	   </article>
   </slide>
   
+   <slide class="part4">
+    <hgroup>
+      <h2>
+		Improvements & Issues to tackle
+	  </h2>	
+	    <article style="padding-top:50px;padding-right:30px;">
+		<h3>ModelingBot interpreter</h3>
+		 1. Add instructions to cover more needs<br/>
+		 <br/><h3>Textual syntax</h3>
+		 1. Provide templates according to use cases<br/>
+		 
+		<br/><h3>Mylyn Intent bridge</h3>
+		 1. JUnit tests should be automatically generated (instead of using quick-fix)<br/>
+		<br/>2. Generated tests should be hidden: launch TestSuite directly from document<br/>
+		<br/>3. Improve junit failures: directly open related documentation
+	   </article>
+    </hgroup>
+	
+	</slide>
    <slide class="thanks">
     <hgroup>
       <h2>
@@ -472,9 +493,15 @@ URL: https://code.google.com/p/io-2012-slides
 
 
 		<article>
-		<img class="reflect" src="images/contact/website.png"  style="width:50px"/> <a href="http://www.eclipse.org/intent">http://www.eclipse.org/intent</a>
-		<br/><br/> <img class="reflect" src="images/Intent/Image-Intent_logo_cropped.png"  style="width:50px"/> <a href="http://wiki.eclipse.org/Intent">http://wiki.eclipse.org/Intent</a>
-		<br/><br/> <img class="reflect" src="images/contact/twitter.jpg" style="width:50px"/> @Intent_project
+		<img class="reflect" src="images/contact/website.png"  style="width:50px"/> 
+		<a href="http://www.eclipse.org/eef">http://www.eclipse.org/eef</a> <span style="margin-left:100px">
+		<a href="http://www.eclipse.org/intent">http://www.eclipse.org/intent</a></span>
+		
+		<br/><br/> <img class="reflect" src="images/Intent/Image-Intent_logo_cropped.png"  style="width:50px"/> 
+		<a href="http://wiki.eclipse.org/EEF">http://wiki.eclipse.org/EEF</a><span style="margin-left:100px">
+		<a href="http://wiki.eclipse.org/Intent">http://wiki.eclipse.org/Intent</a></span>
+		<br/><br/> <img class="reflect" src="images/contact/twitter.jpg" style="width:50px"/>
+		<span style="margin-left:350px"> @Intent_project</span>
 		
 		<h2><br/><br/>
 		Don't forget to give Feedback <br/>
