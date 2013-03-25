@@ -30,17 +30,15 @@ URL: https://code.google.com/p/io-2012-slides
 	<h2 style="left:100px;top:0px;"> Documentation Driven Testing</h2>
 	<aside class="gdbar" style="top:50px;width: 1900px;height:80px;">	
 	</aside>
-	<h3 style="margin-left:100px;margin-top:0px;color:black;font-size:40px">Leverage your documentation to improve your tests</h3>
 	
     <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
     <hgroup style="position:relative;left:-100px;top:250px;padding: 0px 0px 0px 0px;margin:0px 0px 0px 0px;">
 		<div>
       <h1  style="display:none" data-config-title class="stroke white"><!-- populated from slide_config.json --></h1>
       <h2  style="display:none" data-config-subtitle class="stroke white"><!-- populated from slide_config.json --></h2>
-	  <br/><br/><br/>
+	  <br/><br/><br/> <br/><br/><br/><br/>
 	  <p style="font-size:27px" class="stroke white">Goulwen Le Fur <br/>Alex Lagarde (Morel)<br/>Software Engineers, Obeo</p>
-	 	<p style="font-size:27px;width:300px;margin-top:-35px; margin-left:830px"><span class="stroke white">EclipseCon Boston</span>
-		<span class="stroke white" >2013</span></p>
+	 	<p style="font-size:27px;width:300px;margin-top:-70px; margin-left:860px"><img src="images/DDT/ec_boston.png" style="width:70%" /></p>
 	  </div>
     </hgroup>	
 
@@ -130,7 +128,7 @@ URL: https://code.google.com/p/io-2012-slides
      <slide class="part1">
     <hgroup>
       <h2>
-		 First scenario: <b>Code generation</b>
+		 First approach: <b>Code generation</b>
 	  </h2>
     </hgroup>
 	<br/><br/>
@@ -176,7 +174,7 @@ URL: https://code.google.com/p/io-2012-slides
  </slide>
  
  <slide class="part1">
- <h2>Second scenario: Tests <b>modeling</b></h2>
+ <h2>Second approach: Tests <b>modeling</b></h2>
  
  <br/><br/>
  <h3>3 required steps:</h3>
@@ -224,24 +222,24 @@ URL: https://code.google.com/p/io-2012-slides
   </ul>
   </slide>
   
+     <slide class="part1">
+  <br/><br/>
+  <img src="images/DDT/awesome.jpg" style="float:right;padding-right:80px"/>
+  <br/><br/><br/><br/>
+  <h2>Awesome but...<br/><br/>How can I use that?</h2>
+  <span style="margin-left:0px" >Using a Treeview to create tests model isn't the best way...</span>
+  </slide>
+  
   
    <slide class="segue nobackground partTitle" style="background: url(images/DDT/open.png); background-size: 100%;">
 	  <h2>2. Open the tooling to functional users <span style="font-size:0px;">_</span></h2>
 	  <aside style="width:1005px" class="gdbar" ></aside>
   </slide>
-    <slide class="part1">
-  <br/><br/>
-  <img src="images/DDT/awesome.jpg" style="float:right;padding-right:80px"/>
-  <br/><br/><br/><br/>
-  <h2>Awesome but...<br/><br/>How can I use that?</h2>
-  <!--<span style="margin-left:50px" >Need for an <b>efficient</b> test creation</span>-->
-  </slide>
+ 
   <slide class="part2">
   <h2>Toward an accessible tooling</h2>
   
   <br/><br/>
-  <h3>Using a Treeview to create test model isn't the best way...</h3>
-	<br/><br/>
   <h3>This kind of model is well suited for a <b>textual syntax</b></h3>
 	<br/><br/>
   <h3>Let's use the <img src="images/DDT/Xtext.png" style="width:15%"> project to create a textual syntax for our test DSL</h3>
@@ -256,7 +254,7 @@ URL: https://code.google.com/p/io-2012-slides
   </slide>
      <slide class="segue nobackground partTitle" style="background: url(images/DDT/understand.jpg); background-size: 100%;">
 	  <h2>3. Understand intents behind tests  <span style="font-size:0px;">_</span></h2>
-	  <aside style="width:1005px" class="gdbar" ></aside>
+	  <aside style="width:865px" class="gdbar" ></aside>
 	
   </slide>
  <slide class="part3">
@@ -473,6 +471,7 @@ URL: https://code.google.com/p/io-2012-slides
 	    <article style="padding-top:50px;padding-right:30px;">
 		<h3>ModelingBot interpreter</h3>
 		 1. Add instructions to cover more needs<br/>
+		 2. Improve <i>checking</i>
 		 <br/><h3>Textual syntax</h3>
 		 1. Provide templates according to use cases<br/>
 		 
