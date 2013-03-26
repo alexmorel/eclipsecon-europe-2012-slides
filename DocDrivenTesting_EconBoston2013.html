@@ -279,20 +279,6 @@ URL: https://code.google.com/p/io-2012-slides
 		 </p>
 	</article>
    </slide>
-
-   <slide class="part3" style="background: url(images/Intent/linked_doc.png); background-size: 90%;background-position:30px 0px;background-color:white; background-repeat : no-repeat;">
-	<div class="auto-fadein paddinger" style="position:relative;top:100px;text-align:center;width:62%">
-		<h2>How does Intent keep Doc synchronized?</h2>
-		<hr/>
-		By <b>linking</b> documentation parts with technical<br/> artifacts (Java code, models, plug-in dependencies...)
-		</div>
-  </slide>
-  
-  <slide class="part3" style="background: url(images/Intent/linked_doc_step2a.png); background-size: 90%;background-position:30px 0px;background-color:white; background-repeat : no-repeat;">
-  </slide>
-  
-  <slide class="part3" style="background: url(images/Intent/linked_doc_step5b.png); background-size: 90%;background-position:30px 0px;background-color:white; background-repeat : no-repeat;">
-  </slide>
   
    <slide class="partNONE" style="background: url(images/Intent/smartEA/instead_of_v2.png); background-size: 90%;background-position:30px 30px;background-color:white; background-repeat : no-repeat;">
   </slide>
@@ -466,22 +452,44 @@ URL: https://code.google.com/p/io-2012-slides
    <slide class="part4">
     <hgroup>
       <h2>
-		Improvements & Issues to tackle
-	  </h2>	
+		Improvements & Issues to tackle (I)
+	  </h2>			  </hgroup>
 	    <article style="padding-top:50px;padding-right:30px;">
-		<h3>ModelingBot interpreter</h3>
-		 1. Add instructions to cover more needs<br/>
-		 2. Improve <i>checking</i>
-		 <br/><h3>Textual syntax</h3>
-		 1. Provide templates according to use cases<br/>
-		 
-		<br/><h3>Mylyn Intent bridge</h3>
-		 1. JUnit tests should be automatically generated (instead of using quick-fix)<br/>
-		<br/>2. Generated tests should be hidden: launch TestSuite directly from document<br/>
-		<br/>3. Improve junit failures: directly open related documentation
-	   </article>
-    </hgroup>
+		<h3> Conceptual concerns </h3>
+		<br/>
+		1. Test the Doc-Driven Testing approach on more use cases<br/><br/>
+		2. Improve <i>checking</i> definition
+		</article>
+   </slide>
+   
+   <slide class="part4">
+    <hgroup>
+      <h2>
+		Improvements & Issues to tackle (II)
+	  </h2>			  </hgroup>
+	    <article style="padding-top:50px;padding-right:30px;">
+		<h3> Design concerns </h3>
+		<br/>
+		1. Extensibility: allow to provide new Actions sets<br/><br/>
+		2. Extensibility: what about non SWTBot-based tests? (Jubula, Q7...)
+		</article>
+   </slide>
+
+   <slide class="part4">
+    <hgroup>
+      <h2>
+		Improvements & Issues to tackle (III)
+	  </h2>			   </hgroup>
+	    <article style="padding-top:50px;padding-right:30px;">
+		<h3> Tooling concerns: textual syntax </h3>
+		1. Need for an extensible grammar is it possible with Xtext ?<br/>
 	
+		 
+		<br/><h3>Tooling concerns: Mylyn Intent bridge</h3>
+		 1. JUnit tests should be automatically generated (instead of using quick-fix)<br/>
+		2. Generated tests should be hidden: launch TestSuite directly from document<br/>
+		3. Improve junit failures: directly open related documentation
+		</article>
 	</slide>
    <slide class="thanks">
     <hgroup>
@@ -491,18 +499,18 @@ URL: https://code.google.com/p/io-2012-slides
     </hgroup>
 
 
-		<article>
+		<article style="margin-top :30px">
 		<img class="reflect" src="images/contact/website.png"  style="width:50px"/> 
 		<a href="http://www.eclipse.org/eef">http://www.eclipse.org/eef</a> <span style="margin-left:100px">
 		<a href="http://www.eclipse.org/intent">http://www.eclipse.org/intent</a></span>
 		
-		<br/><br/> <img class="reflect" src="images/Intent/Image-Intent_logo_cropped.png"  style="width:50px"/> 
+		<br/> <img class="reflect" src="images/Intent/Image-Intent_logo_cropped.png"  style="width:50px"/> 
 		<a href="http://wiki.eclipse.org/EEF">http://wiki.eclipse.org/EEF</a><span style="margin-left:100px">
 		<a href="http://wiki.eclipse.org/Intent">http://wiki.eclipse.org/Intent</a></span>
-		<br/><br/> <img class="reflect" src="images/contact/twitter.jpg" style="width:50px"/>
-		<span style="margin-left:350px"> @Intent_project</span>
-		
-		<h2><br/><br/>
+		<h2><br/>Don't miss EEF & Intent talks tomorrow:</h2>
+		<ul><li>Cityview Ballroom 2 - 11h - Stop throwing your doc away: Agile Documentation with Mylyn Intent - </li></ul>
+		<ul><li>Harborview Ballroom 3- 15h - EMF Community, time for moving on Eclipse4 thanks to the Extended Editing Framework 2.0!</li></ul>
+		<br/><h2>
 		Don't forget to give Feedback <br/>
 		 <img class="reflect" style="padding-top:20px" src="images/Intent/feedback.png"/> 
 		</h2>
